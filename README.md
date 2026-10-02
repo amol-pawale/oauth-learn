@@ -1,10 +1,6 @@
 # oauth-learn
 
-**"Login with GitHub"** implemented with the **OAuth 2.0 Authorization Code flow + PKCE**, built with Vue 3 and .NET 10, containerized, and deployed to a public HTTPS domain through a CI/CD pipeline.
-
-[![CI](https://github.com/<your-username>/oauth-learn/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/oauth-learn/actions/workflows/ci.yml)
-
-> **Live:** `https://auth.<your-domain>`
+**"Login with GitHub"** implemented with the **OAuth 2.0 Authorization Code flow + PKCE**, built with Vue 3 and .NET 10, containerized, 
 
 ## Project status
 
@@ -380,10 +376,6 @@ _Fill this in with your own observations._
 - [RFC 9700: OAuth 2.0 Security Best Current Practice](https://datatracker.ietf.org/doc/html/rfc9700)
 - [GitHub Docs: Authorizing OAuth apps](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
 
-## Contributing
 
-Work happens on short-lived branches and lands through pull requests; CI must pass before merge. Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/).
 
-## License
 
-MIT (add a `LICENSE` file if you publish this publicly).
