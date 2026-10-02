@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  api:
+    image: oauth-learn-api:latest
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DefaultConnection: ${DB_CONNECTION_STRING}
+    ports:
+      - "5000:8080"
+    depends_on:
+      - postgres
+
+  web:
+    image: oauth-learn-web:latest
+    ports:
+      - "3000:80"
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
